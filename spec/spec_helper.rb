@@ -7,5 +7,3 @@ rescue LoadError
 rescue Bundler::GemNotFound, Gem::LoadError
   abort 'Run `bundle install`'
 end
-
-$: << File.expand_path('../../karma8-ror', __FILE__)
