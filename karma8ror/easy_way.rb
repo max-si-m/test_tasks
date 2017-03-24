@@ -7,8 +7,7 @@ module EasyWay
     current_index = 0
     counts.times do |n|
       if min_way_array.empty?
-        min_way_array << array[n].first
-        next
+        next min_way_array << array[n].first        
       else
         curr_value = array[n][current_index]
         next_value = array[n][current_index + 1]
